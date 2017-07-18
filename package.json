@@ -1,0 +1,26 @@
+
+// Dogecoin Restful API For aOS Sunshine 
+// File: package.js
+// Author: Jared Rice Sr. 
+// Organization: AriseBank (AriseLabs)
+// This file serves package requirements to the npm installer.
+
+{
+  "name": "dogecoin-sunrise-api",
+  "version": "0.0.4",
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.2.x"
+  },
+  "main": "app.js",
+  "description": "Creates restful API for dogecoind",
+  "dependencies": {
+    "change-case": "1.0.4",
+    "dotenv": "0.2.3",
+    "hapi": "1.6.2",
+    "bitcoin": "2.0.0",
+    "request": "2.21.0",
+    "underscore": "1.5.2"
+  }
+}
+
