@@ -7,7 +7,7 @@ Built and released by AriseLabs, the developers behind AriseBank.
 
 ## Test It For Yourself
 ```
-curl -X GET https://dogex.arisebank.com/aos/get_balance
+curl -X GET https://dogex-001.arisebank.net/aos/get_balance
 ```
 
 ## Usage
