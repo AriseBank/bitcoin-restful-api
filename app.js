@@ -24,9 +24,13 @@ e.ENV           = process.env.NODE_ENV || 'production';
 
 // We will require Hapi Server to manage multiple port connections and API routes.
 // Below, you can change the port number for RPC-JSON, if you have changed it from the default configuration.
-var port        = parseInt(process.env.PORT) || 22556;
+var thePort        = parseInt(process.env.PORT) || 22556;
 var Hapi        = require('hapi');
-var server      = new Hapi.Server(+port, '0.0.0.0', { cors: true });
+//var server      = new Hapi.Server(+port, '0.0.0.0', { cors: true });
+var server      = new Hapi.Server();
+
+server.connection({port: +thePort});
+
 
 // Here we will create a new RISE Client, that will help Hapi Server process API routes and API server information.
 var bitclient = new rise.Client({
@@ -86,7 +90,7 @@ _.each(commands, function(value, cmd) {
 }
   server.route({
     method  : 'GET',
-    path    : '/so/'+changeCase.snakeCase(cmd),
+    path    : '/aos/'+changeCase.snakeCase(cmd),
     config  : config
   });
 });
@@ -95,10 +99,4 @@ _.each(commands, function(value, cmd) {
 server.start(function() {
   console.log('Dogecoin Sunrise API server started at: ' + server.info.uri);
 });
-
-
-
-
-
-
 
