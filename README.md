@@ -5,9 +5,13 @@
 The unofficial, yet so official, Dogecoin Restful API for Dogecoind.
 Built and released by AriseLabs, the developers behind AriseBank. 
 
-## Test It For Yourself
+## Test It For Yourself (With CURL)
 ```
-curl -X GET https://dogex-001.arisebank.net/aos/get_balance
+curl -X GET http://dogex-001.arisebank.net:2500/aos/get_info
+```
+## Test It For Yourself (Over HTTP)
+```
+http://dogex-001.arisebank.net:2500/aos/get_info
 ```
 
 ## Usage
@@ -102,7 +106,7 @@ You need to have a `dogecoind` server that the API can talk to. You can easily i
 Note: For development or production deployment, we recommend doing a git clone from our AriseLabs repository. You can also clone from GitHub, but our Labs may update before GitHub, between the time you install and the time the update is mirrored from our servers back to GitHub. 
 
 ```
-git clone https://lab.arisebank.com/dogecoin/dogecoin-sunrise-api.git
+git clone http://lab.arisebank.com/dogecoin/dogecoin-sunrise-api.git
 cd dogecoin-sunrise-api
 npm install
 cp .env.example .env
