@@ -1,6 +1,9 @@
 {
   "name": "dogecoin-sunrise-api",
   "version": "0.0.4",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
   "engines": {
     "node": "0.10.x",
     "npm": "1.2.x"
@@ -8,10 +11,12 @@
   "main": "app.js",
   "description": "Creates restful API for dogecoind",
   "dependencies": {
+    "bitcoin": "^3.0.1",
     "change-case": "1.0.4",
     "dotenv": "0.2.3",
-    "hapi": "1.6.2",
-    "bitcoin": "*",
+    "express": "^4.15.3",
+    "hapi": "^16.5.0",
+    "nodemon": "^1.11.0",
     "request": "2.21.0",
     "underscore": "1.5.2"
   }
