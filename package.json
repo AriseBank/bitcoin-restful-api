@@ -1,5 +1,5 @@
 {
-  "name": "dogecoin-sunrise-api",
+  "name": "bitcoin-sunrise-api",
   "version": "0.0.4",
   "scripts": {
     "start": "nodemon app.js"
@@ -9,7 +9,7 @@
     "npm": "1.2.x"
   },
   "main": "app.js",
-  "description": "Creates restful API for dogecoind",
+  "description": "Creates restful API for bitcoind",
   "dependencies": {
     "bitcoin": "^3.0.1",
     "change-case": "1.0.4",
