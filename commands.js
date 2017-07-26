@@ -1,4 +1,4 @@
-// Dogecoin Restful API For aOS Sunshine 
+// Bitcoin Restful API For aOS Sunshine 
 // File: commands.js
 // Author: Jared Rice Sr. 
 // Organization: AriseBank (AriseLabs) [https://arisebank.com] [https://developers.arisebank.com]
