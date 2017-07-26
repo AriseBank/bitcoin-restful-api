@@ -1,9 +1,9 @@
 'use strict';
-// Dogecoin Restful API For aOS Sunshine
+// Bitcoin Restful API For aOS Sunshine
 // File: app.js
 // Author: Jared Rice Sr.
 // Organization: AriseBank (AriseLabs) [https://arisebank.com] [https://developers.arisebank.com]
-// This file contains the application code for the Dogecoin Restful API
+// This file contains the application code for the Bitcoin Restful API
 // It is commented to guide you through the code.
 // Feel free to change whatever you need to, at your own risk.
 
@@ -12,7 +12,7 @@
 const dotenv = require('dotenv');
 dotenv.load();
 
-// Required Libraries For Dogecoin Restful API. These are mandatory to interact with the RPC-JSON server.
+// Required Libraries For Bitcoin Restful API. These are mandatory to interact with the RPC-JSON server.
 // The Bitcoin library is the most important dependency. Without it, this script will not function or communicate with the RPC-JSON server.
 //
 const changeCase = require('change-case');
@@ -25,7 +25,7 @@ e.ENV = process.env.NODE_ENV || 'production';
 
 // We will require Hapi Server to manage multiple port connections and API routes.
 // Below, you can change the port number for RPC-JSON, if you have changed it from the default configuration.
-const thePort = parseInt(process.env.APP_PORT) || 22556;
+const thePort = parseInt(process.env.APP_PORT) || 8332;
 const theIP = process.env.APP_IP;
 //var server      = new Hapi.Server(+port, '0.0.0.0', { cors: true });
 const server = new Hapi.Server();
@@ -90,7 +90,7 @@ _.each(commands, (value, cmd) => {
             args.push(handler);
             bitclient[cmd].apply(bitclient, args);
 
-            // Return the response from the Dogecoin server
+            // Return the response from the Bitcoin server
             return res;
         }
     };
@@ -102,11 +102,11 @@ _.each(commands, (value, cmd) => {
     });
 });
 
-// This function will start your Dogecoin Sunrise API server. 
+// This function will start your Bitcoin Sunrise API server. 
 server.start((err) => {
     if (err)
         throw err;
 
-    console.log('Dogecoin Sunrise API server started at: ' + server.info.uri);
+    console.log('Bitcoin Sunrise API server started at: ' + server.info.uri);
 });
 
