@@ -99,7 +99,7 @@ Here's a non-exhaustive list of the available endpoints.
 
 ### Prerequisites
 
-You need to have a `dogecoind` server that the API can talk to. You can easily install Dogecoin's core files using our EasyCoin Installer (Bitcoin Family Version) [here](http://lab.arisebank.com/crypto-tools/easycoin-btc/blob/master/easycoin-btc-v0.1.6.sh), with one line and no headaches.
+You need to have a `dogecoind` installation that the API can talk to. You can easily install Dogecoin's core files using our EasyCoin Installer (Bitcoin Family Version) [here](http://lab.arisebank.com/crypto-tools/easycoin-btc/blob/master/easycoin-btc-v0.1.6.sh), with one line and no headaches.
 
 ### Development or Production Deployment 
 
