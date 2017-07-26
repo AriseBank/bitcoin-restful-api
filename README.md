@@ -11,7 +11,7 @@ curl -X GET http://dogex-001.arisebank.net:2500/aos/get_info
 ```
 ## Test It For Yourself (Over HTTP)
 ```
-http://dogex-001.arisebank.net:2500/aos/get_info
+http://dogecoin-api.arisebank.net/aos/get_info
 ```
 
 ## Usage
